@@ -60,7 +60,7 @@
                 "Incident response readiness",
             ],
             imageUrl:
-                "https://images.pexels.com/photos/7714847/pexels-photo-7714847.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-7714847.jpg&fm=jpg",
+                "https://images.pexels.com/photos/7714750/pexels-photo-7714750.jpeg",
         },
         {
             key: "waste",
@@ -74,7 +74,7 @@
                 "Responsible disposal support",
             ],
             imageUrl:
-                "https://images.pexels.com/photos/5591475/pexels-photo-5591475.jpeg?cs=srgb&dl=pexels-shvetsa-5591475.jpg&fm=jpg",
+                "https://images.pexels.com/photos/4445850/pexels-photo-4445850.jpeg",
         },
         {
             key: "plant",
