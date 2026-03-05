@@ -22,9 +22,6 @@ export type HowStep = {
     blurb: string;
 };
 
-export type AboutStat = { key: string; label: string; value: string };
-export type AboutValue = { key: string; title: string; blurb: string };
-
 export type AboutSection = {
     heading: string;
     intro: string;
@@ -203,30 +200,6 @@ export const ABOUT_SECTION: AboutSection = {
         "https://images.pexels.com/photos/5686102/pexels-photo-5686102.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5686102.jpg&fm=jpg",
 };
 
-export const ABOUT_STATS: AboutStat[] = [
-    { key: "services", label: "Services", value: "6+" },
-    { key: "coverage", label: "Coverage", value: "On-site + mobile teams" },
-    { key: "support", label: "Support", value: "Planned + reactive" },
-];
-
-export const ABOUT_VALUES: AboutValue[] = [
-    {
-        key: "coordination",
-        title: "Coordination",
-        blurb: "One point of contact with organised delivery across services.",
-    },
-    {
-        key: "safety",
-        title: "Safety-first",
-        blurb: "Practical processes and documentation-ready work on site.",
-    },
-    {
-        key: "clarity",
-        title: "Clarity",
-        blurb: "Clear updates and fewer surprises from start to finish.",
-    },
-];
-
 export const FINAL_CTA_SECTION: {
     heading: string;
     details: string;
@@ -239,4 +212,17 @@ export const FINAL_CTA_SECTION: {
     buttonText: "Contact us on WhatsApp",
     message:
         "Hi, I'd like to request a quote. Please share pricing/availability and the next steps.",
+};
+
+/** FOOTER */
+export const FOOTER: {
+    tagline: string;
+    addressLines: string[];
+    facebookUrl: string;
+    email: string;
+} = {
+    tagline: "Integrated infrastructure and support services for your site.",
+    addressLines: ["Johannesburg, South Africa", "Mon - Fri: 08:00 - 17:00"],
+    facebookUrl: "#", // TODO: replace with your real Facebook page link
+    email: "info@ctragroup.co.za", // TODO: change if needed
 };

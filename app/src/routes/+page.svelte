@@ -5,6 +5,7 @@
     import Benefits from "$lib/components/sections/Benefits.svelte";
     import About from "$lib/components/sections/About.svelte";
     import FinalCTA from "$lib/components/sections/FinalCTA.svelte";
+    import Footer from "$lib/components/sections/Footer.svelte";
 
     import {
         WHATSAPP_NUMBER,
@@ -14,6 +15,7 @@
         BENEFITS,
         ABOUT_SECTION,
         FINAL_CTA_SECTION,
+        FOOTER,
     } from "$lib/config/site";
 </script>
 
@@ -48,4 +50,12 @@
     buttonText={FINAL_CTA_SECTION.buttonText}
     message={FINAL_CTA_SECTION.message}
     whatsappNumber={WHATSAPP_NUMBER}
+/>
+
+<Footer
+    whatsappNumber={WHATSAPP_NUMBER}
+    facebookUrl={FOOTER.facebookUrl}
+    tagline={FOOTER.tagline}
+    addressLines={FOOTER.addressLines}
+    email={FOOTER.email}
 />
