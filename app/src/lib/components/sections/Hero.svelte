@@ -20,4 +20,8 @@
     h1 {
         font: var(--h1);
     }
+
+    p {
+        margin: var(--spacing2) 0;
+    }
 </style>
