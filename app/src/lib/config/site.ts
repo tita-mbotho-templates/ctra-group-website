@@ -16,17 +16,41 @@ export type Benefit = {
     iconPath: string;
 };
 
+export type HowStep = {
+    key: string;
+    title: string;
+    blurb: string;
+};
+
+export type AboutStat = { key: string; label: string; value: string };
+export type AboutValue = { key: string; title: string; blurb: string };
+
+export type AboutSection = {
+    heading: string;
+    intro: string;
+    body: string[];
+    imageUrl: string;
+};
+
 export const WHATSAPP_NUMBER = ""; // e.g. "27721234567" (no +)
 
-export const HERO = {
+/** HERO */
+export const HERO: {
+    heading: string;
+    details: string;
+    ctaText: string;
+    ctaLink: string;
+    img: string;
+} = {
     heading: "Integrated infrastructure and support services for your site",
     details:
         "Engineering, electrical, cleaning, security, waste management, and plant hire. One group, coordinated delivery, reliable results.",
     ctaText: "Get a quote",
     ctaLink: "/contact",
     img: "/img/hero/hero-1.png",
-} as const;
+};
 
+/** SERVICES */
 export const SERVICES: Service[] = [
     {
         key: "engineering",
@@ -92,10 +116,11 @@ export const SERVICES: Service[] = [
     },
 ];
 
-export const BENEFITS_SECTION = {
+/** BENEFITS */
+export const BENEFITS_SECTION: { heading: string; intro: string } = {
     heading: "Benefits",
     intro: "Why teams choose us for integrated site support.",
-} as const;
+};
 
 export const BENEFITS: Benefit[] = [
     {
@@ -136,16 +161,11 @@ export const BENEFITS: Benefit[] = [
     },
 ];
 
-export type HowStep = {
-    key: string;
-    title: string;
-    blurb: string;
-};
-
-export const HOW_IT_WORKS_SECTION = {
+/** HOW IT WORKS */
+export const HOW_IT_WORKS_SECTION: { heading: string; intro: string } = {
     heading: "How it works",
     intro: "A simple process that keeps delivery clear from first contact to ongoing support.",
-} as const;
+};
 
 export const HOW_IT_WORKS_STEPS: HowStep[] = [
     {
@@ -167,5 +187,42 @@ export const HOW_IT_WORKS_STEPS: HowStep[] = [
         key: "deliver",
         title: "Delivery and follow-through",
         blurb: "Work gets done, updates are shared, and the site stays supported.",
+    },
+];
+
+/** ABOUT */
+export const ABOUT_SECTION: AboutSection = {
+    heading: "About us",
+    intro: "Integrated site support delivered with clear coordination and predictable standards.",
+    body: [
+        "CTRA Group provides integrated infrastructure and support services for operational sites. We bring key services under one coordinated delivery model so work is completed efficiently, safely, and without unnecessary handovers.",
+        "Our teams support both planned maintenance and reactive call-outs. We prioritise clear communication, practical compliance, and consistent turnaround times - so sites keep running and managers get reliable outcomes.",
+        "With multiple service lines available through one partner, clients gain better visibility, fewer delays between contractors, and a smoother path from enquiry to execution.",
+    ],
+    imageUrl:
+        "https://images.pexels.com/photos/5686102/pexels-photo-5686102.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-5686102.jpg&fm=jpg",
+};
+
+export const ABOUT_STATS: AboutStat[] = [
+    { key: "services", label: "Services", value: "6+" },
+    { key: "coverage", label: "Coverage", value: "On-site + mobile teams" },
+    { key: "support", label: "Support", value: "Planned + reactive" },
+];
+
+export const ABOUT_VALUES: AboutValue[] = [
+    {
+        key: "coordination",
+        title: "Coordination",
+        blurb: "One point of contact with organised delivery across services.",
+    },
+    {
+        key: "safety",
+        title: "Safety-first",
+        blurb: "Practical processes and documentation-ready work on site.",
+    },
+    {
+        key: "clarity",
+        title: "Clarity",
+        blurb: "Clear updates and fewer surprises from start to finish.",
     },
 ];

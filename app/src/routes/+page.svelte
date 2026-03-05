@@ -3,7 +3,7 @@
     import Hero from "$lib/components/sections/Hero.svelte";
     import ServicesGrid from "$lib/components/sections/ServicesGrid.svelte";
     import Benefits from "$lib/components/sections/Benefits.svelte";
-    import HowItWorks from "$lib/components/sections/HowItWorks.svelte";
+    import About from "$lib/components/sections/About.svelte";
 
     import {
         WHATSAPP_NUMBER,
@@ -11,8 +11,7 @@
         SERVICES,
         BENEFITS_SECTION,
         BENEFITS,
-        HOW_IT_WORKS_SECTION,
-        HOW_IT_WORKS_STEPS,
+        ABOUT_SECTION,
     } from "$lib/config/site";
 </script>
 
@@ -34,8 +33,9 @@
     benefits={BENEFITS}
 />
 
-<HowItWorks
-    heading={HOW_IT_WORKS_SECTION.heading}
-    intro={HOW_IT_WORKS_SECTION.intro}
-    steps={HOW_IT_WORKS_STEPS}
+<About
+    heading={ABOUT_SECTION.heading}
+    intro={ABOUT_SECTION.intro}
+    body={ABOUT_SECTION.body}
+    imageUrl={ABOUT_SECTION.imageUrl}
 />
