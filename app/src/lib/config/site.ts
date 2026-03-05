@@ -226,3 +226,17 @@ export const ABOUT_VALUES: AboutValue[] = [
         blurb: "Clear updates and fewer surprises from start to finish.",
     },
 ];
+
+export const FINAL_CTA_SECTION: {
+    heading: string;
+    details: string;
+    buttonText: string;
+    message: string;
+} = {
+    heading: "Ready to get started?",
+    details:
+        "Tell us what you need and we will confirm scope, timelines, and the next steps.",
+    buttonText: "Contact us on WhatsApp",
+    message:
+        "Hi, I'd like to request a quote. Please share pricing/availability and the next steps.",
+};

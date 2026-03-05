@@ -4,6 +4,7 @@
     import ServicesGrid from "$lib/components/sections/ServicesGrid.svelte";
     import Benefits from "$lib/components/sections/Benefits.svelte";
     import About from "$lib/components/sections/About.svelte";
+    import FinalCTA from "$lib/components/sections/FinalCTA.svelte";
 
     import {
         WHATSAPP_NUMBER,
@@ -12,6 +13,7 @@
         BENEFITS_SECTION,
         BENEFITS,
         ABOUT_SECTION,
+        FINAL_CTA_SECTION,
     } from "$lib/config/site";
 </script>
 
@@ -38,4 +40,12 @@
     intro={ABOUT_SECTION.intro}
     body={ABOUT_SECTION.body}
     imageUrl={ABOUT_SECTION.imageUrl}
+/>
+
+<FinalCTA
+    heading={FINAL_CTA_SECTION.heading}
+    details={FINAL_CTA_SECTION.details}
+    buttonText={FINAL_CTA_SECTION.buttonText}
+    message={FINAL_CTA_SECTION.message}
+    whatsappNumber={WHATSAPP_NUMBER}
 />
