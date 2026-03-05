@@ -1,6 +1,9 @@
 <script lang="ts">
+    import Header from "$lib/components/layout/Header.svelte";
     import Hero from "$lib/components/sections/Hero.svelte";
 </script>
+
+<Header />
 
 <Hero
     heading="Integrated infrastructure and support services for your site"
