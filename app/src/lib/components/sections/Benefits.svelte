@@ -1,58 +1,21 @@
-<script lang="ts">
-    type Benefit = {
+<script context="module" lang="ts">
+    export type Benefit = {
         key: string;
         title: string;
         blurb: string;
         iconPath: string;
     };
+</script>
 
+<script lang="ts">
     export let heading = "Benefits";
-    export let intro =
-        "Practical advantages that make delivery predictable, safe, and easier to manage.";
-
-    export let benefits: Benefit[] = [
-        {
-            key: "single-provider",
-            title: "Single provider, coordinated delivery",
-            blurb: "One team to manage multiple services - fewer handovers and faster turnaround.",
-            iconPath: "/img/icons/benefits-coordination.svg",
-        },
-        {
-            key: "reliable-uptime",
-            title: "Reliable uptime and response",
-            blurb: "Planned maintenance and reactive support designed around your site's needs.",
-            iconPath: "/img/icons/benefits-uptime.svg",
-        },
-        {
-            key: "safety-compliance",
-            title: "Safety and compliance first",
-            blurb: "Documentation-ready work with practical processes that reduce risk on site.",
-            iconPath: "/img/icons/benefits-safety.svg",
-        },
-        {
-            key: "clear-communication",
-            title: "Clear communication",
-            blurb: "Better updates, fewer surprises, and alignment across stakeholders.",
-            iconPath: "/img/icons/benefits-communication.svg",
-        },
-        {
-            key: "scalable",
-            title: "Scales with your operations",
-            blurb: "Add services or increase coverage as your site grows - without reworking everything.",
-            iconPath: "/img/icons/benefits-scale.svg",
-        },
-        {
-            key: "cost-control",
-            title: "Better cost control",
-            blurb: "Less duplication, smarter scheduling, and clearer visibility over what you're paying for.",
-            iconPath: "/img/icons/benefits-cost.svg",
-        },
-    ];
+    export let intro = "";
+    export let benefits: Benefit[] = [];
 </script>
 
 <section class="margin6">
     <section class="center">
-        <h1>{heading}</h1>
+        <h2>{heading}</h2>
         <p>{intro}</p>
     </section>
 

@@ -44,7 +44,7 @@
 
 <section class="margin6">
     <div class="center">
-        <h1>Services</h1>
+        <h2>Services</h2>
         <p>Choose a service to learn more and contact us on WhatsApp.</p>
     </div>
 
