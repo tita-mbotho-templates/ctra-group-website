@@ -135,3 +135,37 @@ export const BENEFITS: Benefit[] = [
         iconPath: "/img/icons/benefits-cost.svg",
     },
 ];
+
+export type HowStep = {
+    key: string;
+    title: string;
+    blurb: string;
+};
+
+export const HOW_IT_WORKS_SECTION = {
+    heading: "How it works",
+    intro: "A simple process that keeps delivery clear from first contact to ongoing support.",
+} as const;
+
+export const HOW_IT_WORKS_STEPS: HowStep[] = [
+    {
+        key: "choose",
+        title: "Choose a service",
+        blurb: "Pick what you need (or mix services). Open details and confirm scope.",
+    },
+    {
+        key: "enquire",
+        title: "Send a WhatsApp enquiry",
+        blurb: "Tap 'Connect with our experts' to message us about the selected service.",
+    },
+    {
+        key: "confirm",
+        title: "Confirm scope and schedule",
+        blurb: "We align requirements, timelines, access, and safety/compliance needs.",
+    },
+    {
+        key: "deliver",
+        title: "Delivery and follow-through",
+        blurb: "Work gets done, updates are shared, and the site stays supported.",
+    },
+];
